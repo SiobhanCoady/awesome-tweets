@@ -1,0 +1,74 @@
+body {
+  padding-top: 50px;
+}
+.img-icon {
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 40px;
+  width: auto;
+}
+.tweet-form {
+  margin: 20px;
+  padding: 10px;
+  padding-bottom: 50px;
+  border: thin black solid;
+}
+.form-element {
+  margin: 5px 0px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+}
+.display-tweet {
+  margin: 20px !important;
+  padding: 0px !important;
+  border: thin black solid;
+}
+.user-info {
+  margin: 20px;
+  padding: 10px 0px;
+  min-height: 200px;
+  border: thin black solid;
+}
+.user-info * {
+  padding: 0px !important;
+}
+.user-info-img {
+  height: 80px;
+  width: auto;
+  margin: 0px 10px;
+  border: thin black solid;
+}
+.message-count {
+  margin: 20px 10px;
+}
+h3, h4 {
+  margin: 0px !important;
+}
+.left-column, .right-column {
+  padding: 0px !important;
+}
+.trending {
+  margin: 20px;
+  padding: 10px;
+  border: thin black solid;
+}
+.trending-title {
+  margin: 20px;
+  padding: 0px;
+}
+.tweet-img {
+  height: 60px;
+  width: 60px;
+  margin: 0px;
+  border: thin black solid;
+}
+.table {
+  border: none !important;
+  margin: 0px !important;
+}
+.left-cell {
+  width: 80px;
+  border-right: thin black solid;
+}

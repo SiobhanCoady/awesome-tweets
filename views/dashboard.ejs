@@ -1,0 +1,65 @@
+<%- include('partials/header') %>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 hidden-sm hidden-xs left-column">
+      <div class="user-info">
+        <div class="col-lg-4 col-md-4">
+          <img src="/images/sheep.png" class="user-info-img">
+          <div class="message-count">
+            <p>Messages:</p>
+            <p>12</p>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-0 col-xs-0">
+          <h3>Siobhan Coady</h3>
+          <p>@username</p>
+        </div>
+      </div>
+      <div class="trending-title">
+        <h1>Trending AweTweets</h1>
+      </div>
+      <div class="trending">
+        #Things<br>
+        #WinterIsHere<br>
+        #TrumpIsALump<br>
+        #BetterGetThatCheckedUSA<br>
+        #Node8inApril<br>
+        #EllenGaveEverybodyAThing<br>
+      </div>
+    </div>
+
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 pull-right right-column">
+      <div class="tweet-form">
+        <form action="/dashboard" method="post">
+          <div class="form-element">
+            <input type="text" name="username" placeholder="Username">
+          </div>
+          <div class="form-element">
+            <textarea name="body" maxlength="255" placeholder="Write message here..."></textarea>
+          </div>
+          <div class="form-element pull-right">
+            <input type="submit" value="Submit">
+          </div>
+      </form>
+    </div>
+    <% if (tweets) { %>
+      <% for (let tweet of tweets) { %>
+        <div class="container-fluid display-tweet">
+          <table class="table">
+            <tr>
+              <td class="left-cell"><img src="/images/cat.png" class="tweet-img"></td>
+              <td>
+                <h4><%= tweet.username %></h4>
+                <p><%= tweet.body %></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      <% } %>
+    <% } %>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
